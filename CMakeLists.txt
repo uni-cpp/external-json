@@ -11,10 +11,6 @@ set( SOURCES
 add_library( ${PROJECT_NAME} INTERFACE
 )
 
-target_sources( ${PROJECT_NAME} INTERFACE
-    "${SOURCE_DIR}/external/json/include/nlohmann/json.hpp"
-)
-
 target_include_directories( ${PROJECT_NAME}
     INTERFACE
         ${SOURCE_DIR}/external/json/include
